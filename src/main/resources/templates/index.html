@@ -1,0 +1,19 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/pico.min.css" th:href="@{css/pico.min.css}">
+	<link rel="stylesheet" type="text/css" href="../static/css/styleHome.css" th:href="@{css/styleHome.css}">
+	<title>MyWeather</title>
+</head>
+<body>
+<main class="container">
+	<h1>Find My Weather</h1>
+	<form class="form-group" action="#" th:action="@{/process}" method="POST">
+		<label for="cityName">
+			<input type="text" id="cityName" name="cityName" placeholder="City Name" required />
+		</label>
+		<button type="submit">Find out the weather!</button>
+	</form>
+</main>
+</body>
+</html>

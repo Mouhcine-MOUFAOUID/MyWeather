@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/pico.min.css" th:href="@{css/pico.min.css}">
+	<link rel="stylesheet" type="text/css" href="../static/css/styleResult.css" th:href="@{css/styleResult.css}">
+	<title th:text="${cityName}"></title>
+</head>
+<body>
+<main class="container">
+	<h1 th:text="'Weather in ' + ${cityName}"></h1>
+	<div class="image-container">
+		<img th:src="${imgUrl}" alt="No picture available" class="weather-image" />
+	</div>
+	<p th:text="'Weather description: ' + ${desc}"></p>
+	<br>
+	<p th:text="'Temperature: ' + ${temp} + ' Celsius'"></p>
+
+	<form action="/" method="GET">
+		<button>Another City!</button>
+	</form>
+</main>
+</body>
+</html>

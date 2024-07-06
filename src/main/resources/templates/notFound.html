@@ -1,0 +1,21 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/pico.min.css" th:href="@{css/pico.min.css}">
+	<link rel="stylesheet" type="text/css" href="../static/css/styleNotFound.css" th:href="@{css/styleNotFound.css}">
+	<title>Not found</title>
+</head>
+<body>
+	<main class="container">
+		<section>
+			<h2>Sorry but the city you entered cannot found.</h2>
+			<p th:text="${exception}"></p>
+			<br></br>
+			<form action="/" method="POST">
+				<button>Try again!</button>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
